@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Welcome to Ajax Throwdown!</h1>
+  
+  <div>
+    <h2>Generate a new message</h2>
+    <div id="generated_message"></div>
+    <button id="generate_message_button">Generate!</button>
+  </div>
+  
+  <div>
+    <h2>Search for users</h2>
+    <input type="text" id="user_search" />
+    <div id="search_results">
+    </div>
+  </div>
+  
+  <div>
+    <h2>Create a new user</h2>
+    <form action="/users" method="POST" id="new_user_form">
+      Name <input type="text" name="user[name]" />
+      Screen Name <input type="text" name="user[screen_name]" />
+      <input type="submit" value="Save" />
+    </form>
+  </div>
+</div>
